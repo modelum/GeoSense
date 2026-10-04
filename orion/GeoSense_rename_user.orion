@@ -1,0 +1,5 @@
+GeoSense_rename_user operations
+
+USING GeoSense:1
+
+RENAME ENTITY User TO Account
