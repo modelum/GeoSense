@@ -1,0 +1,82 @@
+// Experimental Mongoose subgraph for OrionFlow evaluation.
+// Source: modelum/GeoSense
+// This is not intended to be a full reverse-engineered schema.
+
+Schema GeoSense:1
+
+Root entity User
+{
+  +_id: Identifier,
+  name: String,
+  email: String,
+  password: String,
+  superuser: Boolean,
+  createdAt: Timestamp,
+  updatedAt: Timestamp
+}
+
+Root entity Job
+{
+  +_id: Identifier,
+  createdAt: Timestamp,
+  updatedAt: Timestamp,
+  type: String,
+  status: String
+}
+
+Root entity LayerOptions
+{
+  +_id: Identifier,
+  title: String,
+  unit: String,
+  description: String,
+  enabled: Boolean,
+  public: Boolean,
+  opacity: Number
+}
+
+Entity InitialArea
+{
+  center: List<Number>,
+  zoom: Number
+}
+
+Root entity Map
+{
+  +_id: Identifier,
+  active: Boolean,
+  title: String,
+  sharing: String,
+  description: String,
+  author: String,
+  linkURL: String,
+  linkTitle: String,
+  twitter: String,
+  displayInfo: Boolean,
+  secretSlug: String,
+  slug: String,
+  host: String,
+  featured: Number,
+  initialArea: aggr<InitialArea>?,
+  createdBy: ref<User as Identifier>?,
+  modifiedBy: ref<User as Identifier>?,
+  createdAt: Timestamp,
+  updatedAt: Timestamp
+}
+
+Root entity GeoFeatureCollection
+{
+  +_id: Identifier,
+  title: String,
+  description: String,
+  source: String,
+  unit: String,
+  defaults: ref<LayerOptions as Identifier>?,
+  createdBy: ref<User as Identifier>?,
+  modifiedBy: ref<User as Identifier>?,
+  active: Boolean,
+  status: String,
+  progress: Number,
+  createdAt: Timestamp,
+  updatedAt: Timestamp
+}
