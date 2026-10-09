@@ -3,3 +3,4 @@ M_GEO_AA_01_geosense_add_user_nickname operations
 USING GeoSense:1
 
 ADD ATTR User::nickname: String
+
