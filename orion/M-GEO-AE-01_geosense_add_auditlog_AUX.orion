@@ -1,0 +1,5 @@
+M_GEO_AE_01_geosense_add_auditlog_AUX operations
+
+USING GeoSense:1
+
+ADD ENTITY AuditLog: { +_id: Identifier, event: String, createdAt: Timestamp }

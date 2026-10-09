@@ -1,0 +1,5 @@
+M_GEO_CA_01_geosense_cast_map_featured_to_boolean operations
+
+USING GeoSense:1
+
+CAST ATTR Map::featured TO Boolean

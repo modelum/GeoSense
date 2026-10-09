@@ -1,0 +1,5 @@
+M_GEO_RF_01_geosense_rename_map_title operations
+
+USING GeoSense:1
+
+RENAME Map::title TO mapTitle

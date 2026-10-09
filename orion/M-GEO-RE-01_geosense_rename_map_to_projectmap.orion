@@ -1,0 +1,5 @@
+M_GEO_RE_01_geosense_rename_map_to_projectmap operations
+
+USING GeoSense:1
+
+RENAME ENTITY Map TO ProjectMap

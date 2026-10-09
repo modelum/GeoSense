@@ -1,0 +1,5 @@
+M_GEO_AG_01_geosense_add_user_preferences_aggregate operations
+
+USING GeoSense:1
+
+ADD AGGR User::preferences: { language: String, timezone: String }&
