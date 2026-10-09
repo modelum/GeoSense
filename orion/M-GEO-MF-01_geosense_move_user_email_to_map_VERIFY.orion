@@ -3,3 +3,4 @@ M_GEO_MF_01_geosense_move_user_email_to_map_VERIFY operations
 USING GeoSense:1
 
 MOVE User::email TO Map::creatorEmail WHERE _id = createdBy
+
