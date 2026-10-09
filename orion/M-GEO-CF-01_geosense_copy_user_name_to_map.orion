@@ -3,3 +3,4 @@ M_GEO_CF_01_geosense_copy_user_name_to_map operations
 USING GeoSense:1
 
 COPY User::name TO Map::createdByName WHERE _id = createdBy
+
