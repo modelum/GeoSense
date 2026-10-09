@@ -1,0 +1,5 @@
+M_GEO_MR_01_geosense_morph_defaults_reference_to_aggregate_VERIFY operations
+
+USING GeoSense:1
+
+MORPH REF GeoFeatureCollection::defaults TO embeddedDefaults

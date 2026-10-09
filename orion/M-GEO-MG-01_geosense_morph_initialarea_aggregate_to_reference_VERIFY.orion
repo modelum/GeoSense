@@ -1,0 +1,5 @@
+M_GEO_MG_01_geosense_morph_initialarea_aggregate_to_reference_VERIFY operations
+
+USING GeoSense:1
+
+MORPH AGGR Map::initialArea TO areaRef
