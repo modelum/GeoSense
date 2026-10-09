@@ -3,3 +3,4 @@ M_GEO_DF_01_geosense_delete_user_superuser operations
 USING GeoSense:1
 
 DELETE User::superuser
+
