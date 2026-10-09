@@ -3,3 +3,4 @@ M_GEO_DE_01_geosense_delete_job operations
 USING GeoSense:1
 
 DELETE ENTITY Job
+
